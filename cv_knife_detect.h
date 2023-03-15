@@ -20,7 +20,7 @@ public:
 	virtual void image_process();
 
 public:
-	String imagePath;
+	string imagePath;
 	cv::Mat src;
 	cv::Mat gray;
 	cv::Mat binary;
