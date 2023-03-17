@@ -1,6 +1,6 @@
 #include "common.h"
 
-uint8_t LOG_VDEBUG_LEVEL = LOG_DEBUG;
+uint8_t LOG_VDEBUG_LEVEL = LOG_ERROR;
 
 void cv_image_log_print(const char *tag, const char *level, const char *fmt, ...)
 {

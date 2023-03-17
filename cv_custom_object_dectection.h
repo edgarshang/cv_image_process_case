@@ -8,6 +8,7 @@
 
 using namespace std;
 using namespace cv;
+using namespace cv::ml;
 
 class CustomObjectDectection : public CV_Image_Process
 {
