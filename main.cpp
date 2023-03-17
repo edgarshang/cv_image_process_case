@@ -5,15 +5,19 @@
 
 #include "cv_knife_detect.h"
 #include "cv_image_process.h"
+#include "cv_custom_object_dectection.h"
 
 
-int main()
+int main(int argc, char** argv)
 {
 	std::cout << "Hello World!\n";
 
-	string path = "D:/project/learnOpencv/opencv_case_study/knife_detection/code_image/ce_01.jpg";
+	string knife_path = "D:/project/learnOpencv/opencv_case_study/knife_detection/code_image/ce_02.jpg";
+
 	
-	CV_Image_Process *imageProcess = new CV_Knife_Detect(path, 1);
+	//CV_Image_Process *imageProcess = new CV_Knife_Detect(knife_path, 0);
+	CV_Image_Process *imageProcess = new CustomObjectDectection(knife_path);
+	
 
 	imageProcess->image_process();
 
