@@ -7,6 +7,7 @@
 #include "cv_image_process.h"
 #include "cv_custom_object_dectection.h"
 #include "cv_qrcode_recognize.h"
+#include "cv_image_kmeans.h"
 
 
 int main(int argc, char** argv)
@@ -18,7 +19,7 @@ int main(int argc, char** argv)
 	
 	//CV_Image_Process *imageProcess = new CV_Knife_Detect(knife_path, 0);
 	//CV_Image_Process *imageProcess = new CustomObjectDectection(knife_path);
-	CV_Image_Process *imageProcess = new CV_Qrcode_Recognize(knife_path, 1);
+	CV_Image_Process *imageProcess = new CV_Image_KMeans(knife_path, 1);
 	
 
 	imageProcess->image_process();
